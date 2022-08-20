@@ -1,0 +1,10 @@
+stages:
+  - build
+  - release
+
+build:
+  stage: build
+  image: node:14.17.0-alpine
+  script:
+    - npm install
+    - npm run build
